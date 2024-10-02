@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="photo.css">
+</head>
+<body>
+    <div class="counter">
+        <div class="lines">
+            <div class="line">
+                <label>Saturate</label>
+                <input type="range" id="Saturate" class="myRange" step="0.1" min="0" max="10" value="1">
+            </div>
+            <div class="line">
+                <label>Contrast</label>
+                <input type="range" id="Contrast" class="myRange" step="0.1" min="0" max="10" value="1">
+            </div>
+            <div class="line">
+                <label>Brightness</label>
+                <input type="range" id="Brightness" class="myRange" step="0.1" min="0" max="10" value="1">
+            </div>
+            <div class="line">
+                <label>Sepia</label>
+                <input type="range" id="Sepia" class="myRange" step="0.1" min="0" max="1" value="0">
+            </div>
+            <div class="line">
+                <label>GrayScale</label>
+                <input type="range" id="GrayScale" class="myRange" step="0.1" min="0" max="1" value="0">
+            </div>
+            <div class="line">
+                <label>Blur</label>
+                <input type="range" id="Blur" class="myRange" step="0.1" min="0" max="10" value="0">
+            </div>
+            <div class="line">
+                <label>Hue Rotate</label>
+                <input type="range" id="rotate" class="myRange" min="0" max="350" value="0">
+            </div>
+            <div class="line">
+                <label>opasity</label>
+                <input type="range" id="opasity" class="myRange" step="0.1" min="0" max="1" value="1">
+            </div>
+            <div class="box">
+                <p id="reset">Reset</p>
+                <a id="dowload" download="true">Dowload</a>
+            </div>
+        </div>
+        <div class="photo">
+            <div class="img">
+                <img id="img" src="">
+                <div class="upload">
+                    <label for="upload">upload</label>
+                    <input type="file" id="upload">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="photo.js"></script>
+</body>
+</html>

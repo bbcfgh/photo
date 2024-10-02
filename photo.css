@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+.counter{
+    background-color: #009688;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.counter .lines{
+    direction: rtl;
+}
+
+.lines .line{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.lines .line label{
+    font-size: 30px;
+    margin: 20px;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+.box p, 
+.box a{
+    color: #E91E63;
+    padding: 10px;
+    background-color: #2196F3;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* تعديل الشريط */
+/* الشريط */
+.myRange {
+    width: 250px;
+    height: 10px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.photo{
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+.img img{
+    width: 100%;
+    background-size: cover;
+}
+.photo .upload{
+    color: #E91E63;
+    position: absolute;
+    padding: 10px;
+    background-color: #2196F3;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    left: 50%;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.photo label{
+    cursor: pointer;
+}
+.photo input{
+    display: none;
+    cursor: pointer;
+}
+.box #dowload{
+    margin: 0;
+    text-align: center;
+    height: 45px;
+    position: relative;
+    top: 19px;
+}
+@media (max-width: 500px) {
+    .counter{
+        flex-direction: column-reverse;
+    }
+    .photo{
+        width: 93%;
+        margin: 10px auto;
+        position: relative;
+    }
+    .myRange{
+        width: 340px;
+    }
+}
+@media (max-width: 992px) {
+    .counter{
+        flex-direction: column-reverse;
+    }
+    .photo{
+        width: 93%;
+        margin: 10px auto;
+        position: relative;
+    }
+    .myRange{
+        width: 340px;
+    }
+}
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
